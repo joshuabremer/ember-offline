@@ -10,6 +10,26 @@ Check out the demo on [github pages](https://ahmadsoe.github.io/ember-offline/ "
 
 `ember install ember-offline`
 
+Want to customize your Offline.js settings? Ember-Offline inherits the Offline.options from the environment.js file. Add an `emberOptions` key to the environment.js to pass any additional options:
+
+### Example:
+
+````
+var ENV = {
+  ...
+  emberOffline: {
+    themes: {
+      theme: 'default',
+      indicator: false,
+      language: 'english'
+    }
+  }
+  ...
+};
+````
+
+See here for more options: http://github.hubspot.com/offline/
+
 ## Running
 
 * `ember server`
